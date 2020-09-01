@@ -1,4 +1,5 @@
 import React from "react";
+import TodoForm from "./components/TodoForm";
 
 const toDoListData = [
   {
@@ -34,10 +35,32 @@ class App extends React.Component {
       toDoList: [...this.state.toDoList, newToDo],
     });
   };
+
+  clearTodo = () => {
+    this.setState({
+      toDoList: this.state.toDoList.filter((i) => {
+        if (i.done === false) return i;
+      }),
+    });
+  };
+
+  finishedToDo = (id) => {
+    this.setState({
+      toDoList: this.state.toDoList.map((i) => {
+        if (id === i.id) return { ...i, done: !i.done };
+        else return i;
+      }),
+    });
+  };
   render() {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
+        <TodoForm
+          todo={this.state.todo}
+          addToDo={this.addToDo}
+          clearTodo={this.clearTodo}
+        />
       </div>
     );
   }

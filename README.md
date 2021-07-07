@@ -14,15 +14,15 @@ We're going to practice building a stateful class component with this project. E
 ```js
 [
   {
-    task: 'Organize Garage',
+    task: "Organize Garage",
     id: 1528817077286,
-    completed: false
+    completed: false,
   },
   {
-    task: 'Bake Cookies',
+    task: "Bake Cookies",
     id: 1528817084358,
-    completed: false
-  }
+    completed: false,
+  },
 ];
 ```
 
@@ -75,5 +75,6 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 - **Hosting** Create a [Netlify Account](https://www.netlify.com/) and follow the tutorial on how to host your shiny new todo app on the world wide web.
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+- [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
